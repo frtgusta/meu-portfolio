@@ -19,19 +19,20 @@
 <body class="bg-slate-950 text-slate-200 antialiased font-sans">
 
     <header class="fixed top-0 w-full z-50 border-b border-emerald-500/10 bg-slate-950/70 backdrop-blur-xl">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black group-hover:rotate-12 transition-transform">G</div>
-                <span class="font-bold tracking-tighter text-xl">Tech<span class="text-emerald-500"> & Development</span></span>
-            </a>
-            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
-                <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
-                <a href="projetos.html" class="hover:text-emerald-400 transition">Projects</a>
-                <a href="feed.html" class="text-emerald-500">Activities</a>
-                <a href="cv.html" class="hover:text-emerald-400 transition">Resume</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <a href="index.html" class="flex items-center gap-2 group">
+            <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black group-hover:rotate-12 transition-transform">G</div>
+            <span class="font-bold tracking-tighter text-xl text-white">Tech<span class="text-emerald-500"> & Development</span></span>
+        </a>
+
+        <div class="flex gap-4 md:gap-8 text-[10px] md:text-sm font-medium uppercase tracking-widest overflow-x-auto no-scrollbar">
+            <a href="index.html" class="hover:text-emerald-400 transition whitespace-nowrap">Home</a>
+            <a href="projetos.html" class="hover:text-emerald-400 transition whitespace-nowrap">Projects</a>
+            <a href="feed.html" class="hover:text-emerald-400 transition whitespace-nowrap">Activities</a>
+            <a href="cv.html" class="hover:text-emerald-400 transition whitespace-nowrap">Resume</a>
+        </div>
+    </nav>
+</header>
 
     <main class="pt-32 pb-20 container mx-auto max-w-2xl border-x border-slate-900 min-h-screen bg-slate-950/50">
         
