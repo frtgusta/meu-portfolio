@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Gustavo Freitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: radial-gradient(#10b98115 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased font-sans">
+
+    <header class="fixed top-0 w-full z-50 border-b border-emerald-500/10 bg-slate-950/70 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black group-hover:rotate-12 transition-transform">G</div>
+                <span class="font-bold tracking-tighter text-xl">Tech<span class="text-emerald-500"> & Development</span></span>
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
+                <a href="projetos.html" class="text-emerald-500">Projects</a>
+                <a href="feed.html" class="hover:text-emerald-400 transition">Activities</a>
+                <a href="cv.html" class="hover:text-emerald-400 transition">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6">
+        <header class="mb-16">
+            <h1 class="text-4xl font-black text-white mb-2 uppercase tracking-tight">Projects & Research</h1>
+            <div class="w-20 h-1 bg-emerald-500 mb-6"></div>
+            <p class="text-slate-400 max-w-xl">
+                Development of critical systems, data infrastructure, and applied autonomous robotics.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <article class="border border-slate-800 bg-slate-900/50 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <span class="text-emerald-500 font-mono text-xs uppercase tracking-widest">Undergraduate Research Project | LabNet (UFRJ)</span>
+                        <h2 class="text-2xl font-bold text-white mt-1">Low-Cost Weather Station</h2>
+                    </div>
+                    <div class="text-slate-700 group-hover:text-emerald-500 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.673.337a4 4 0 01-2.574.344l-3.118-.624A2 2 0 014.657 13c0-5.173 4.77-9 10.343-9 2.8 0 5.391 1.023 7.428 2.731l-1.428 1.428A4.001 4.001 0 0013.123 10l.707.707"></path></svg>
+                    </div>
+                </div>
+                
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    Full-stack development of a smart station , from <span class="text-white">C++</span> firmware programming to backend server infrastructure with <span class="text-white">RabbitMQ</span> for AI-driven predictionste.
+                </p>
+
+                <ul class="space-y-2 mb-8 text-sm text-slate-500">
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Implementation of resilient firmware in Modern C++ for microcontrollers (ESP8266/ESP32).
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Design of a telemetry pipeline using RabbitMQ and MQTT protocol, ensuring asynchronous and secure delivery of structured JSON data.
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Development of Python processing routines and MongoDB management for historical metrics storage and analysis.
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Transitioning the project from breadboard to real-world operation, ensuring system stability in production network environments.
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Debugging connectivity issues and code optimization to ensure 99% availability for critical data transmission.
+                    </li>
+                </ul>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">C++</span>
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">RabbitMQ</span>
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">MongoDB</span>
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">Python</span>
+                </div>
+            </article>
+
+            <article class="border border-slate-800 bg-slate-900/50 p-8 rounded-2xl hover:border-emerald-500/30 transition-all group">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <span class="text-emerald-500 font-mono text-xs uppercase tracking-widest">UFRJ Nautilus</span>
+                        <h2 class="text-2xl font-bold text-white mt-1">Harpia (Autonomous Drone)</h2>
+                    </div>
+                    <div class="text-slate-700 group-hover:text-emerald-500 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                    </div>
+                </div>
+                
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    Software systems for autonomous drones utilizing <span class="text-white">ROS2</span> for asynchronous communication and <span class="text-white">OpenCV</span> for computer vision.
+                </p>
+
+                <ul class="space-y-2 mb-8 text-sm text-slate-500">
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Standardization of deployment environments through Docker containers.
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Implementation of object detection algorithms and reactive decision-making.
+                    </li>
+                    <li class="flex items-center gap-2 italic">
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+                        Optimizing development cycles for safety-critical systems.
+                    </li>
+                </ul>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">ROS2</span>
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">OpenCV</span>
+                    <span class="px-2 py-1 bg-slate-950 border border-slate-800 rounded font-mono text-[10px] text-emerald-500">Docker</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-600 text-xs tracking-widest uppercase">
+        Control and Automation Engineering — UFRJ
+    </footer>
+
+</body>
+</html>

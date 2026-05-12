@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed | Gustavo Freitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Engineering Grid background effect */
+        body {
+            background-image: radial-gradient(#10b98115 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased font-sans">
+
+    <header class="fixed top-0 w-full z-50 border-b border-emerald-500/10 bg-slate-950/70 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black group-hover:rotate-12 transition-transform">G</div>
+                <span class="font-bold tracking-tighter text-xl">Tech<span class="text-emerald-500"> & Development</span></span>
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
+                <a href="projetos.html" class="hover:text-emerald-400 transition">Projects</a>
+                <a href="feed.html" class="text-emerald-500">Activities</a>
+                <a href="cv.html" class="hover:text-emerald-400 transition">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto max-w-2xl border-x border-slate-900 min-h-screen bg-slate-950/50">
+        
+        <div class="border-b border-slate-900 sticky top-[61px] bg-slate-950/80 backdrop-blur-md z-40">
+            <div class="px-6 py-4">
+                <h1 class="text-xl font-black uppercase tracking-tight text-white italic">Timeline</h1>
+            </div>
+            <div class="flex px-6 pb-4 gap-4 overflow-x-auto no-scrollbar">
+                <a href="#lectures" class="whitespace-nowrap px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/5 text-emerald-500 text-xs font-bold hover:bg-emerald-500 hover:text-white transition">Lectures/Classes</a>
+                <a href="#competitions" class="whitespace-nowrap px-4 py-1.5 rounded-full border border-slate-800 bg-slate-900 text-slate-400 text-xs font-bold hover:border-emerald-500/30 transition">Competitions</a>
+                <a href="#volunteering" class="whitespace-nowrap px-4 py-1.5 rounded-full border border-slate-800 bg-slate-900 text-slate-400 text-xs font-bold hover:border-emerald-500/30 transition">Volunteering</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col">
+
+            <div id="lectures" class="scroll-mt-40">
+                <article class="p-6 border-b border-slate-900 hover:bg-slate-900/80 transition group">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://github.com/frtgusta.png" alt="Gustavo" class="w-12 h-12 rounded-full border border-emerald-500/20">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="font-bold text-white">Gustavo Freitas</span>
+                                <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                                <span class="text-slate-500 text-sm">@frtgusta · May 2026</span>
+                            </div>
+                            <p class="text-slate-300 leading-snug mb-4">
+                                Taught a class on IoT, covering how to develop projects with microcontrollers and sensors using MQTT telemetry. What an honor to deliver my first lecture! 🚀
+                                <br><br>
+                                The meeting took place at the Encriptades project, held by Instituto da Hora at Nave do Conhecimento (Engenhão). I've always believed in the transformative power of education, but being able to contribute directly to the development of others was an indescribably rewarding experience.
+                            </p>
+                            <div class="rounded-2xl border border-slate-800 overflow-hidden mb-4">
+                                <img src="img/aula.jpeg" alt="First Lecture" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="p-6 border-b border-slate-900 hover:bg-slate-900/80 transition group">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://github.com/frtgusta.png" alt="Gustavo" class="w-12 h-12 rounded-full border border-emerald-500/20">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="font-bold text-white">Gustavo Freitas</span>
+                                <span class="text-slate-500 text-sm">@frtgusta · April 2026</span>
+                            </div>
+                            <p class="text-slate-300 leading-snug mb-4">
+                                What an incredible experience participating in Arduino Day 2026! 🚀
+                                <br><br>
+                                This Saturday, I had the honor of taking the stage to present my Undergraduate Research project in the lecture "Democratizing the Climate: How to Create an Environmental Monitoring Network with Open Hardware." We discussed how accessible technology can empower communities to monitor their own environment and generate critical data for our planet's future.
+                            </p>
+                            <div class="rounded-2xl border border-slate-800 overflow-hidden mb-4">
+                                <img src="img/palestra.jpeg" alt="Arduino Day Lecture" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div id="competitions" class="scroll-mt-40">
+                <article class="p-6 border-b border-slate-900 hover:bg-slate-900/80 transition group">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://github.com/frtgusta.png" alt="Gustavo" class="w-12 h-12 rounded-full border border-emerald-500/20">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="font-bold text-white">Gustavo Freitas</span>
+                                <span class="text-slate-500 text-sm">@frtgusta · June 2025</span>
+                            </div>
+                            <p class="text-slate-300 leading-snug mb-4">
+                                My first competition! The whole process was a true immersion in challenges and learning. After all the difficulties we faced, it was magnificent to see the fruit of our teamwork.
+                            </p>
+                            <div class="rounded-2xl border border-slate-800 overflow-hidden mb-4">
+                                <img src="img/eletroquad.jpeg" alt="Eletroquad Competition" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div id="volunteering" class="scroll-mt-40">
+                <article class="p-6 border-b border-slate-900 hover:bg-slate-900/80 transition group">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://github.com/frtgusta.png" alt="Gustavo" class="w-12 h-12 rounded-full border border-emerald-500/20">
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-1 mb-1">
+                                <span class="font-bold text-white">Gustavo Freitas</span>
+                                <span class="text-slate-500 text-sm">@frtgusta · October 2024</span>
+                            </div>
+                            <p class="text-slate-300 leading-snug mb-4">
+                                Technical exhibitor at <span class="text-emerald-500">Rio Innovation Week 2024</span>, showcasing solutions for autonomous vehicles. 🚀
+                            </p>
+                            <div class="rounded-2xl border border-slate-800 overflow-hidden mb-4">
+                                <img src="img/RIR.jpeg" alt="Rio Innovation Week" class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-slate-900 text-center">
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">UFRJ | NCE | LABNET</p>
+    </footer>
+
+</body>
+</html>

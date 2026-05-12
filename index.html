@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Freitas | Engineering & IoT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Engineering Grid background effect */
+        body {
+            background-image: radial-gradient(#10b98115 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+    <header class="fixed top-0 w-full z-50 border-b border-emerald-500/10 bg-slate-950/70 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black">G</div>
+                <span class="font-bold tracking-tighter text-xl">Tech<span class="text-emerald-500"> & Development</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="text-emerald-500">Home</a>
+                <a href="projetos.html" class="hover:text-emerald-400 transition">Projects</a>
+                <a href="feed.html" class="hover:text-emerald-400 transition">Activities</a>
+                <a href="cv.html" class="hover:text-emerald-400 transition">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative pt-32 pb-20">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div>
+                <h1 class="text-5xl lg:text-7xl font-black text-white mb-6 leading-none">
+                    <span class="text-emerald-500">Gustavo</span> Freitas.
+                </h1>
+                <p class="text-lg text-slate-400 mb-8 max-w-xl leading-relaxed">
+                    Undergraduate student at <span class="text-white">UFRJ (Federal University of Rio de Janeiro)</span> and researcher at Labnet NCE. 
+                    Systems developer focused on IoT, sensor integration, and data architecture for autonomous robotics.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mb-10">
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">C++</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">Python</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">ROS2</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">Docker</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">RabbitMQ</span>
+                    <span class="bg-slate-900 border border-slate-800 px-3 py-1 rounded text-xs font-mono text-emerald-500/80">Microcontrollers</span>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="projetos.html" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg shadow-emerald-500/20">
+                        Technical Projects
+                    </a>
+                    <a href="https://github.com/frtgusta" target="_blank" class="text-slate-400 hover:text-white flex items-center gap-2 font-medium group">
+                        GitHub 
+                        <svg class="w-5 h-5 group-hover:text-emerald-500 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.293 24 12c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-64 h-64 bg-emerald-500/10 rounded-full animate-pulse"></div>
+                </div>
+                <div class="relative w-80 h-80 rounded-2xl border-2 border-emerald-500/30 overflow-hidden shadow-2xl transition-all duration-500 group">
+                    <img src="img/palestra.jpeg" alt="Gustavo Freitas" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <span class="text-emerald-500 font-mono text-xs">Arduino Days 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

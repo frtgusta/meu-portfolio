@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Gustavo Freitas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Engineering Grid background effect */
+        body {
+            background-image: radial-gradient(#10b98115 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        /* Dynamic PDF viewer sizing */
+        .pdf-container {
+            height: calc(100vh - 300px);
+            min-height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased">
+
+    <header class="fixed top-0 w-full z-50 border-b border-emerald-500/10 bg-slate-950/70 backdrop-blur-xl">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center text-slate-950 font-black group-hover:rotate-12 transition-transform">G</div>
+                <span class="font-bold tracking-tighter text-xl">Tech<span class="text-emerald-500"> & Development</span></span>
+            </a>
+            <div class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest">
+                <a href="index.html" class="hover:text-emerald-400 transition">Home</a>
+                <a href="projetos.html" class="hover:text-emerald-400 transition">Projects</a>
+                <a href="feed.html" class="hover:text-emerald-400 transition">Activities</a>
+                <a href="cv.html" class="text-emerald-500">Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-32 pb-20 container mx-auto px-6 max-w-5xl">
+        
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+            <div>
+                <span class="text-emerald-500 font-mono text-xs uppercase tracking-[0.3em]">Professional Documentation</span>
+                <h1 class="text-4xl font-black text-white mt-2">Resume</h1>
+            </div>
+            
+            <a href="img/Curriculo_Gustavo.pdf" download class="group flex items-center gap-3 bg-slate-900 border border-emerald-500/30 hover:bg-emerald-600 text-emerald-500 hover:text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-emerald-500/5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download PDF Version
+            </a>
+        </div>
+
+        <div class="relative bg-slate-900 rounded-2xl border border-slate-800 p-2 shadow-2xl overflow-hidden">
+            <div class="flex gap-1.5 mb-2 ml-4 mt-2">
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-slate-800"></div>
+            </div>
+
+            <div class="pdf-container rounded-xl overflow-hidden bg-slate-800">
+                <embed 
+                    src="img/Curriculo_Gustavo.pdf" 
+                    type="application/pdf" 
+                    width="100%" 
+                    height="100%" 
+                />
+            </div>
+            
+            <div class="md:hidden p-8 text-center">
+                <p class="text-slate-400 text-sm mb-4">Direct PDF viewing may be limited on mobile devices.</p>
+                <a href="img/Curriculo_Gustavo.pdf" class="text-emerald-500 font-bold underline">Click here to open the file</a>
+            </div>
+        </div>
+
+        <div class="mt-16 border-t border-slate-900 pt-10">
+            <h3 class="text-white font-bold mb-6 flex items-center gap-2">
+                <span class="w-1 h-4 bg-emerald-500 rounded-full"></span>
+                Core Technical Stack
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+                    <span class="block text-emerald-500 font-mono text-[10px] mb-1 italic uppercase tracking-tighter">Embedded</span>
+                    <span class="text-sm font-medium">C++, ESP32, STM32</span>
+                </div>
+                <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+                    <span class="block text-emerald-500 font-mono text-[10px] mb-1 italic uppercase tracking-tighter">Infra / DevOps</span>
+                    <span class="text-sm font-medium">Docker, Linux, RabbitMQ</span>
+                </div>
+                <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+                    <span class="block text-emerald-500 font-mono text-[10px] mb-1 italic uppercase tracking-tighter">Robotics</span>
+                    <span class="text-sm font-medium">ROS2, OpenCV, PX4</span>
+                </div>
+                <div class="p-4 bg-slate-900/50 border border-slate-800 rounded-lg">
+                    <span class="block text-emerald-500 font-mono text-[10px] mb-1 italic uppercase tracking-tighter">Database</span>
+                    <span class="text-sm font-medium">MongoDB, MQTT</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-12 border-t border-slate-900 text-center">
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.4em]">Gustavo Freitas — 2026</p>
+    </footer>
+
+</body>
+</html>
